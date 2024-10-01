@@ -10,12 +10,12 @@ html{
     scroll-behavior: smooth;
 }
 
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px,auto;
     max-width: 1280px;
 }
 
@@ -27,6 +27,8 @@ ul{
 
 img{
     width: 100%;
+    height: 100%;
+    max-height: 50vh;
 }
 
 p{
@@ -53,6 +55,10 @@ h2{
 
 h1{
     font-size: 48px;
+}
+
+button{
+    cursor: pointer;
 }
 
 .root{
@@ -112,7 +118,7 @@ h1{
 
 }
 
-.btn:hover{
+.text-button:hover{
     background-color:rgb(71, 71, 210);
     color: white;
     text-decoration: none;
@@ -154,7 +160,7 @@ Explorer
 
 .column-left-text-btn{
   position: relative;
-   width: 448px;
+  max-width: 448px;
   height: 8.5vh;
   margin-left: 0px;
   margin-right: 0px;
@@ -168,7 +174,7 @@ Explorer
 }
 
 .text-box{
-   width: 448px;
+   width: 100%;
    padding-top: 20px;
    padding-bottom: 20px;
    padding-right: 192px;
@@ -218,7 +224,7 @@ Explorer
 }
 
 .container-img{
-    width: 100%;
+   max-width: 500px;
     margin-top: 16px;
     padding-right: 128px;
 }
@@ -230,7 +236,7 @@ Explorer
 }
 
 .design-img{
- width: 702px;
+ width: 100%;
     
 }
 
@@ -249,27 +255,27 @@ feature
 
 */
 
-.container-three{
+.FEATURES-row{
     position: relative;
-    padding: 96px 0;
-    margin-right: 96.400px;
-    margin-left: 95.400px;
+    padding: 80px 0;
+    margin-right:auto;
+    margin-left: auto;
 }
 .fet{
     margin-bottom: 16px;
 }
  .three-pa{
-    width: 100%;
-    justify-content: center;
+    text-align: center;
     font-size: 16px;
-    line-height: 1.625;
     font-weight: 500;
     margin-top: 16px;
     color: rgb(124 139 161 );
-    
+    width: 100%;
+    max-width: 576px;
 }
 
 .Services{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -277,17 +283,19 @@ feature
 }
 
 .Service-sub{
-    width: 33.333%;
+    width:calc(100%/3);
 }
 
 .Service{
     display: flex;
-    flex-wrap: wrap;
     padding: 32px 8px;
     margin: 0 16px;
 
 }
-
+.Service-par{
+ width: 100%;
+ max-width: 211px;
+}
 .service-describtion{
     display: flex;
     flex-direction: column;
@@ -295,13 +303,19 @@ feature
     margin-left: 18px;
 }
 
-.img-ser{
+.img_ser_container{
     position: relative;
     border: 1px solid rgb(231, 221, 221);
     border-radius: 9999px;
-    padding: 15px;
+    padding: 20px;
+    align-content: center;
+    width: 65.5px;
+}
 
-    
+.img-ser{
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
 }
 
 .title{
@@ -312,7 +326,6 @@ feature
 }
 
 .Service-par{
-
     margin-top: 16px;
     text-align: left;
     font-weight: 500;
@@ -320,16 +333,16 @@ feature
 }
 
 .Three_service-img{
-position: absolute;
-width: 256px;
-right: -100px;
-bottom: -120px;
-height: 600px;
-opacity: 0.25;
-overflow-y: hidden;
-overflow-x: hidden;
-overflow-clip-margin: content-box;
-overflow: hidden;
+ position: absolute;
+ width: 256px;
+ right: 0px;
+ bottom: 0px;
+ height: 600px;
+ opacity: 0.25;
+ overflow-y: hidden;
+ overflow-x: hidden;
+ overflow: hidden;
+ 
 }
 
 /*
@@ -393,19 +406,19 @@ margin-top: 16px;
 
 .right-row{
     position: relative;
-    width: 50%;
+    max-width: 500px;
 }
 
 .right-row_img{
-    width: 465px ;
+    width: 100% ;
     border:1px solid rgb(226, 232, 240);
     border-radius:4px ;  
 }
 
 .Button__Decorator{
     position: absolute;
-    right: 70px;
-    bottom: -10px;
+    right: -40px;
+    bottom: -40px;
     z-index: -10;
     height: 80px;
     width: 80px;
@@ -433,7 +446,7 @@ steps
 }
 
 .steps-left{
-    width: 50%;
+    max-width: 500px;
     position: relative;
 }
 .steps-img{
@@ -480,8 +493,7 @@ fill: currentColor;
 }
 
 .list-steps_text{
-    display: flex;
-    flex-direction: column;
+    margin-top: 0px;
     margin-left: 24px;
 }
 
@@ -591,8 +603,12 @@ width: 20px;
     margin-right: 0px;
 }
 
+.values-right{
+    max-width: 500px;
+}
+
 .values-img{
-    width: 458px;
+    width: 100%;
 }
 
 /*
@@ -639,7 +655,6 @@ pricing
 }
 
 .plan{
-    width: 369.6%;
     display: flex;
     flex-direction: column;
 }
@@ -652,7 +667,7 @@ pricing
     border-radius: 8px;
     padding: 8px 32px 0px 32px;
     text-align: center;
-    max-width:360px;
+    max-width:384px;
     background-color: rgb(255 255 255);
     color:rgb(26 32 44 );
     --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -826,11 +841,12 @@ Testimonials
 
 .Testimonials-left{
     width: 50%;
+    
 }
 
 .Testimonials-left-img{
     border-radius: 4px;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -838,7 +854,8 @@ Testimonials
     padding-left: 64px;
     order: 9999;
     width: 50%;
-
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .Testimonials-h5{
@@ -1182,7 +1199,6 @@ Started
 }
 
 .Get-started-row-header{
-    width: 50%;
     max-width: 512px;
 }
 
@@ -1197,7 +1213,6 @@ Started
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 0px;
-    width: 50%;
     max-width: 512px;
 }
 
@@ -1216,8 +1231,13 @@ Started
     font-weight: 700;
     letter-spacing: 0.025em;
     text-decoration: none;
+    cursor: pointer;
 }
-
+ .row-btn:hover{
+    background-color: rgb(245 101 101 );
+    color:white;
+    
+ }
 .row-btnn{
     margin-right: 0px;
     --tw-border-opacity: 1;
@@ -1412,38 +1432,47 @@ color: rgb(80 17 204);
 
 .footer__DecoratorBlob2{
     position: absolute;
-    bottom: -220px;
-    right: -110px;
-    height: 320px;
-    width: 320px;
+    bottom: 0px;
+    right: 0px;
+    height: 20rem;
+    width: 20rem;
+    --tw-translate-x: 8rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-translate-y: 12rem;
+    --tw-text-opacity: 1;
+    color: rgb(80 17 204 / var(--tw-text-opacity));
     opacity: 0.5;
-    color: rgb(80 17 204);
-    --tw-text-opacity:1;
 }
-.btn__menu,
+@media(min-width:1024px){
+.btn__menu
 .light___StyledMenu,
 .light___StyledClose,
 .menu__backdrop{
-    display: none;
+display: none;
+}
 }
 
 @media(max-width:1023px){
  .container-three{
-  padding-top: 96px;
-  padding-bottom: 96px;
   margin-left: auto;
   margin-right: auto;
  }
-
+ .nav-links,
  .nav-link{
     display:none ;
  }
  .btn__menu{
     display: flex;
+    z-index: 20;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
  }
- li{
-    display: none;
- }
+ 
+.light___StyledMenu{
+    width: 24px;
+    height: 24px;
+}
+
  .menu__backdrop{
     display: flex;
     position: absolute;
@@ -1509,8 +1538,16 @@ color: rgb(80 17 204);
     margin-bottom: 20px;
   }
   .column-left-text-btn{
-    width: 448px;
+    max-width: 448px;
     text-align: center;
+  }
+
+ .column-left-two_par{
+    text-align: center;
+ }
+
+  .text-button{
+    display: flex;
   }
   .column-left-two{
     margin-top: 48px;
@@ -1522,9 +1559,7 @@ color: rgb(80 17 204);
   h2{
     font-size: 48px;
  }
- .FEATURES-row{
-    max-width:1200px ;
- }
+ 
  .three-h2{
     width: 100%;
     font-size: 48px;
@@ -1544,15 +1579,10 @@ color: rgb(80 17 204);
     justify-content: space-between;
  }
 
- .right-row{
-    width: 50%;
- }
-
-
  .Button__Decorator{
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    bottom: 40px;
  }
 
  .plans{
@@ -1561,25 +1591,152 @@ color: rgb(80 17 204);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 935px;
  }
  .plan_one{
     width: 384px;
+  }
+ 
+  .Get-started-row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Get-started-row-btn{
+   margin-top: 24px;
+
+  }
+}
+
+@media(max-width:750px){
+ 
+ .left-row,.steps-right,.values-left,.Testimonials-right{
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 448px;
  }
+ .left-row-h2,.Testimonials-h2{
+    font-size: 36px;
+ }
+
+  .Testimonials-right{
+    padding-left: 0px;
+  }
+
+  .Testimonials-midel-header{
+    text-align: center;
+  }
+
+ .Testimonials-h5,.Testimonials-h2,.Testimonials-p{
+    text-align: center;
+ }
+ 
+ .Testimonials-p{
+    font-size: 14px;
+ }
+
+ .Services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .order_steps{
+    margin-top: 48px;
+ }
+
+ .steps-right_textcontent,.values-ieft_describtion{
+    align-items: center;
+ }
+
+ .list-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .list-steps_text{
+    align-items: center;
+ }
+
+ .rows-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+ }
+ .left-row-h5,.left-row-h2,.left-row-one,
+ .left-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .row-steps_wrapper{
+    display: flex;
+    flex-direction: column;
+ }
+ .row-values{
+    display: flex;
+    flex-direction:column-reverse;
+ }
+
+ .Testimonials-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  .slick{
+    text-align: center;
+    width: 100%;
+  }
+ 
+  .slick-track-midle{
+    width: 448px;
+  }
+
+ .footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .footer-info p,.footer-sociallinks{
+    margin-top: 32px;
+ }
+ 
 }
-/*
-@media(max-width:640px){
-.root{
-    padding: 32px,32px;
-}
-row{
-    width: 554px;
-}
-.text-button{
+
+@media(max-width:622px){
+ .column-left-text-btn{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 448px;
+    text-align: center;
+    }
+
+ .text-box{
+        width: 100%;
+        border-radius: 9999px;
+        border-width: 2px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        font-weight: 500;
+        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+        transition-duration: 300ms;
+    }
+    
+ .text-button{
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-right: 0.5rem;
     display: flex;
+    flex-direction:column ;
     width: 100%;
     -webkit-box-align: center;
     align-items: center;
@@ -1592,33 +1749,19 @@ row{
     padding-bottom: 1rem;
     font-weight: 700;
     --tw-text-opacity: 1;
-}
-.Services{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.rows-wrapper{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-.left-row-h5,.left-row-h2,.left-row-one,
-.left-row{
+ }
+
+ .Service{
     display: flex;
     flex-direction: column;
     align-items: center;
+ }
+
+ .service-describtion{
+    align-items: center;
+ }
+
+ .Service-sub{
+    max-width: 384px;
+ }
 }
-.row-steps_wrapper{
-    display: flex;
-    flex-direction: column;
-}
-.row-values{
-    display: flex;
-    flex-direction: column;
-}
-img{
-    max-width: 100%;
-}
-}*/
