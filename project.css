@@ -27,8 +27,8 @@ ul{
 
 img{
     width: 100%;
-    height: 100%;
-    max-height: 50vh;
+
+
 }
 
 p{
@@ -85,7 +85,7 @@ button{
   }
 
 .purpule{
-    color: rgb(100, 21, 255)
+    color: rgb(100, 21, 255);
 }
 
 .text{
@@ -123,6 +123,73 @@ button{
     color: white;
     text-decoration: none;
 }
+
+.btn__menu{
+    background-color: transparent;
+    font-size: 48px;
+    text-align: center;
+    border: none;
+    color:rgb(100, 21, 255) ;
+    display: none;
+}
+
+.menu__backdrop{
+    position: absolute;
+    background-color: rgb(255 255 255);
+    top: 0;
+    left: 0;
+    right: 0;
+   z-index: 100;
+    margin: 24px 16px;
+    border-radius: 8px;
+    border-width: 16px;
+    padding: 32px;
+    color:  rgb(26 32 44);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transform: translateX(0%) translateZ(0px);
+    display: none;
+}
+
+.menu__links{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.menu__list{
+    text-decoration: none;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    border-bottom-width: 2px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    font-size: 20px;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+}
+a{
+    text-decoration: none;
+}
+
+.menu__link{
+    color: rgb(26 32 44);
+}
+
+.btn{
+
+    color: white;
+}
+
+.btn__menu--close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color:rgb(100, 21, 255);
+}
+
 /*
 
 Explorer
@@ -305,17 +372,19 @@ feature
 
 .img_ser_container{
     position: relative;
+    width: 24px;
+    height: 24px;
     border: 1px solid rgb(231, 221, 221);
-    border-radius: 9999px;
-    padding: 20px;
+    border-radius: 999px;
+    padding: 22px;
     align-content: center;
-    width: 65.5px;
+    
 }
 
 .img-ser{
     width: 24px;
     height: 24px;
-    max-width: 100%;
+
 }
 
 .title{
@@ -471,11 +540,6 @@ fill: currentColor;
 .steps-right{
     margin-left: 48px;
     width: 50%;
-}
-
-.steps-right_textcontent{
-
-    
 }
 
 .order_steps{
@@ -667,6 +731,7 @@ pricing
     border-radius: 8px;
     padding: 8px 32px 0px 32px;
     text-align: center;
+    width: 100%;
     max-width:384px;
     background-color: rgb(255 255 255);
     color:rgb(26 32 44 );
@@ -1443,14 +1508,6 @@ color: rgb(80 17 204);
     color: rgb(80 17 204 / var(--tw-text-opacity));
     opacity: 0.5;
 }
-@media(min-width:1024px){
-.btn__menu
-.light___StyledMenu,
-.light___StyledClose,
-.menu__backdrop{
-display: none;
-}
-}
 
 @media(max-width:1023px){
  .container-three{
@@ -1461,51 +1518,17 @@ display: none;
  .nav-link{
     display:none ;
  }
+
  .btn__menu{
-    display: flex;
-    z-index: 20;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    transition-duration: 300ms;
+    display: block;
  }
- 
-.light___StyledMenu{
+
+ .light___StyledMenu{
     width: 24px;
     height: 24px;
-}
+ }
 
- .menu__backdrop{
-    display: flex;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    z-index: 20;
-    margin: 24px 16px;
-    border-radius: 8px;
-    border-width: 16px;
-    padding: 32px;
-    color: black;
-    display: block;
-    transform: translateX(0%) translateZ(0px);
- }
- .menu__links{
-     display: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
- .menu__list{
-    display: none;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border-bottom-width: 2px;
-    font-size: 18px;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    transition-duration: 300ms;
- }
- .menu__link{
-    display: none;
- }
+ 
  .light___StyledClose{
     z-index: 20;
     display: none;
